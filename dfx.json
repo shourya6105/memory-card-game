@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "memoryCard_backend": {
+      "main": "src/memoryCard_backend/main.mo",
+      "type": "motoko"
+    },
+    "memoryCard_frontend": {
+      "dependencies": [
+        "memoryCard_backend"
+      ],
+      "source": [
+        "src/memoryCard_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
